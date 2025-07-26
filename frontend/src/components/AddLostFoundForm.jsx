@@ -41,7 +41,7 @@ const AddLostFoundForm = () => {
   const uploadImagesToCloudinary = async () => {
     const uploadedUrls = [];
 
-    const sigRes = await axios.get('http://localhost:5000/api/signature');
+    const sigRes = await axios.get('http://localhost:5000/signature');
     const { signature, timestamp, folder, api_key, cloud_name } = sigRes.data;
 
     for (const file of files) {
@@ -77,7 +77,7 @@ const AddLostFoundForm = () => {
         images: imageUrls
       };
 
-      await axios.post('http://localhost:5000/api/lostfound', finalData);
+      await axios.post('http://localhost:5000/lostfound', finalData);
       setMessage('✅ Item submitted successfully!');
       setFormData({
         itemname: '',

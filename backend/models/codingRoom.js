@@ -26,4 +26,4 @@ const createCodingRoom = ({
   lastEdited
 });
 
-export { createCodingRoom };
+module.exports = { createCodingRoom };

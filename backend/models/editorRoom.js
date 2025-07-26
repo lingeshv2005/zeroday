@@ -8,4 +8,4 @@ const setRoomCode = (roomId, code) => {
   activeRooms[roomId] = code;
 };
 
-export { getRoomCode, setRoomCode };
+module.exports = { getRoomCode, setRoomCode };
