@@ -11,4 +11,4 @@ const joinEditorRoom = (socket, roomId) => {
   });
 };
 
-export { joinEditorRoom };
+module.exports = { joinEditorRoom };
